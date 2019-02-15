@@ -5,7 +5,7 @@ interface SlideDownContentProps extends SlideDownProps {
     forwardedRef: React.RefObject<HTMLDivElement>
 }
 
-class SlideDownContent extends React.Component<SlideDownContentProps> {
+class SlideDownContent extends React.PureComponent<SlideDownContentProps> {
 
     static defaultProps = {
         transitionOnAppear: true,
