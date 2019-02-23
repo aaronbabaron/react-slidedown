@@ -142,11 +142,7 @@ const SlideDownComponent: React.SFC<SlideDownContentProps> = props => {
 
   return (
     <TransitionGroup>
-      {children && (
-        <SlideDownContent key={"content"} {...attrs}>
-          {children}
-        </SlideDownContent>
-      )}
+      {children && <SlideDownContent {...attrs}>{children}</SlideDownContent>}
     </TransitionGroup>
   );
 };
