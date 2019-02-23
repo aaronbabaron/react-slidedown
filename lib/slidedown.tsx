@@ -141,7 +141,7 @@ const SlideDownComponent: React.SFC<SlideDownContentProps> = props => {
   const hasContent = children && React.Children.count(children) !== 0;
 
   return (
-    <TransitionGroup component={TransitionGroupWrapper}>
+    <TransitionGroup>
       {hasContent && (
         <SlideDownContent key={"content"} {...attrs}>
           {children}
