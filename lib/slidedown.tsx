@@ -142,7 +142,7 @@ const SlideDownComponent: React.SFC<SlideDownContentProps> = props => {
 
   return (
     <TransitionGroup>
-      {hasContent && (
+      {children && (
         <SlideDownContent key={"content"} {...attrs}>
           {children}
         </SlideDownContent>
